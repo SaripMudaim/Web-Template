@@ -1,0 +1,410 @@
+/* Custom Untuk Navbar */
+.navbar-custom {
+    height: 60px;
+    background-color: #2c3e50;
+    padding: 15px 0;
+}
+.navbar-custom .nav-link {
+    color: #ecf0f1 !important;
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+.navbar-custom .nav-link:hover {
+    color: #f39c12 !important;
+}
+.navbar-custom .navbar-toggler {
+    border: none;
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ecf0f1' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Custom Txt H1 */
+.custom-h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+
+/* Custom Carousel */
+body {
+    padding-top: 50px; 
+}
+.carousel-custom {
+    margin-top: 20px; 
+}
+.carousel-custom .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+.product-section {
+    margin-top: 40px; 
+}
+.filter-genre {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Custom Untuk Jumbotron */
+/* Styling Jumbotron */
+.jumbotron {
+    max-width: 1200px;
+    height: 400px; /* Sesuaikan tinggi */
+    background-image: url('image/jumbotron.gif'); /* Ganti dengan URL gambar Anda */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    color: white; /* Warna teks agar kontras dengan background */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan konten vertikal */
+    align-items: center; /* Pusatkan konten horizontal */
+    padding: 20px;
+    margin-top: 50px; /* Memberi jarak antara jumbotron dan konten di atasnya */
+    position: relative; /* Untuk overlay */
+    border-radius: 30px;
+    margin: 50px auto 0;
+}
+  
+  /* Overlay untuk membuat teks lebih mudah dibaca */
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam dengan transparansi 50% */
+    z-index: 1;
+}
+  
+  /* Konten di dalam jumbotron */
+.jumbotron h1,
+.jumbotron p,
+.jumbotron .btn {
+    position: relative;
+    z-index: 2; /* Pastikan konten di atas overlay */
+}
+  
+.jumbotron h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+  
+.jumbotron p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Custom Untuk Card */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+    height: 560px; /* Tinggi tetap */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff; /* Tambahkan background untuk card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 390px; /* Tinggi gambar tetap besar */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd; /* Garis pemisah antara gambar dan konten */
+}
+
+.card .content {
+    padding: 15px; /* Padding untuk konten */
+    flex-grow: 1; /* Konten akan memenuhi sisa ruang */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card .description {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card .button {
+    display: flex;
+    gap: 10px; 
+}
+
+.card .btn-detail {
+    background-color: #ffc107; 
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 15px;
+    cursor: pointer;
+    flex: 1; 
+    transition: 0.3s ease;
+}
+
+.card .btn-detail:hover {
+    background-color: #e0a800; 
+}
+
+.card .btn-buy {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 15px;
+    cursor: pointer;
+    flex: 1; 
+    transition:0.3s ease;
+}
+
+.card .btn-buy:hover {
+    background-color: #218838; 
+}
+
+/* Custom Fillter Button */
+.filter-genre {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    position: relative;
+}
+
+.dropdown-menu {
+    text-align: center; /* Memposisikan teks dropdown di tengah */
+}
+
+.product-item {
+    margin-bottom: 20px; /* Jarak antar produk */
+}
+
+body {
+    background-color: #2c3e50;
+}
+
+/* Custom untuk About */
+.accordion {
+    width: 33.33%; 
+    margin: 20px auto; 
+}
+
+.accordion-button {
+    background-color: white; 
+    color: black; 
+    font-size: 18px; 
+    padding: 10px;
+    border: none; 
+    border-radius: 5px; 
+    transition: 0.3s; 
+}
+
+.accordion-button:hover {
+    background-color: #ff8c00;
+}
+
+.accordion-body {
+    background-color: #f8f9fa; 
+    color: #333; 
+    padding: 15px; 
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 5px 5px; 
+}
+
+/* Custom Our Team */
+.team-section {
+    text-align: center; 
+    padding: 40px 20px;
+    background-color: #2c3e50; 
+}
+
+/* Gaya untuk judul tim */
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333; 
+}
+
+.team-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+}
+
+.team-member {
+    background-color: white;
+    border: 1px solid #dee2e6; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 15px; 
+    padding: 20px; 
+    width: 250px; 
+    transition: transform 0.3s; 
+}
+
+.team-member img {
+    width: 100%; 
+    border-radius: 30px;
+}
+
+.team-member h3 {
+    margin: 15px 0 5px; 
+    font-size: 2rem; 
+    color: #007bff; 
+}
+
+.team-member p {
+    color: #666; 
+    font-size: 1.5rem; 
+}
+
+.team-member:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+/* Custom Contact */
+/* Custom untuk Form Section */
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Jarak antara form dan map */
+    padding: 40px;
+    background-color: #34495e; /* Warna background untuk form section */
+    border-radius: 30px;
+    margin: 40px auto;
+    max-width: 1200px; /* Lebar maksimum form section */
+    width: 90%; /* Lebar form section */
+}
+
+/* Gaya untuk form */
+.contact-section form {
+    flex: 1; /* Form akan mengambil ruang yang tersedia */
+    background-color: white; /* Warna background form */
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk input dan label di dalam form */
+.contact-section .form-label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-section .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-section .form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Gaya untuk tombol submit */
+.contact-section .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Gaya untuk checkbox */
+.contact-section .form-check {
+    margin-bottom: 15px;
+}
+
+.contact-section .form-check-input {
+    margin-right: 10px;
+}
+
+.contact-section .form-check-label {
+    font-size: 1rem;
+    color: #333;
+}
+/* End Form */
+
+
+.map {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+    height: 90%;
+    border: 10px;
+    border-radius: 30px;
+    min-height: 565px;
+}
+
+/* footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icon img {
+    width: 24px; /* Ukuran ikon */
+    height: 24px; /* Ukuran ikon */
+    vertical-align: middle;
+}
+
+.copyright {
+    font-size: 14px;
+}

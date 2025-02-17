@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Obestore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <Nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container-fluid">
+            <img src="image/logo.png" alt="logo">
+            <a class="navbar-brand" href="">Obestore</a>
+            <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#product">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </Nav>
+    <!-- End Navbar -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image/1.svg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="image/2.svg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item ">
+                <img src="image/3.svg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Selamat Datang di Obestore</h1>
+        <p>Obestore Adalah Web Game Store Yang Aman Dan Terpercaya</p>
+    </div>
+    <!-- End Jumbotron -->
+
+    <!-- Home -->
+    <!-- Best Seller Product -->
+    <h1 class="custom-h1">Trending Games</h1>
+    <div class="container my-5">
+        <div class="row">
+            <!-- item -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/sandbox/mine.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Minecraft</h5>
+                        <p class="card-text">Rp 109.000</p>
+                        <a href="" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalMine">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- item 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/sandbox/roblox.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Roblox</h5>
+                        <p class="card-text">Free</p>
+                        <a href="" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalRoblox">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- item 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/strategy/balatro.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Balatro</h5>
+                        <p class="card-text">Rp 102.000</p>
+                        <a href="" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalBalatro">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <!-- item 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/casual/stardew.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Stardew Valley</h5>
+                        <p class="card-text">Rp 115.000</p>
+                        <a href="" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalStardew">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Best Seller Product -->
+
+    <!-- Our Product -->
+    <div id="product" class="container our-product-section">
+        <h1 class="custom-h1">Our Games</h1>
+        <!-- Fillter Genre -->
+        <div class="filter-genre mb-4">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Pilih Genre</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#Our Product" data-genre="all">Semua</a></li>
+                <li><a class="dropdown-item" href="#Our Product" data-genre="action">Action</a></li>
+                <li><a class="dropdown-item" href="#Our Product" data-genre="strategy">Strategy</a></li>
+                <li><a class="dropdown-item" href="#Our Product" data-genre="casual">Casual</a></li>
+                <li><a class="dropdown-item" href="#Our Product" data-genre="sandbox">Sandbox</a></li>
+            </ul>
+        </div>
+        <!-- End Fillter Genre -->
+
+        <!-- Grid PRoduct -->
+        <div class="row product-grid">
+            <!-- Product Action -->
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/mortal.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mortal Kombat</h5>
+                        <p class="card-text">Rp 290.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalMortal">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/street.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Street Fighter 5</h5>
+                        <p class="card-text">Rp 250.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalStreet">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/tekken.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Tekken 8</h5>
+                        <p class="card-text">Rp 459.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalTekken">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/assasin.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Assasins Creed</h5>
+                        <p class="card-text">Rp 499.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAssasin">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/eldenring.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Elden Ring</h5>
+                        <p class="card-text">Rp 599.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalEldenring">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/re4.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Resident Evil 4</h5>
+                        <p class="card-text">Rp 595.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalRe4">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/spiderman.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Spiderman 2</h5>
+                        <p class="card-text">Rp 879.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSpiderman">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/darksoul.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Darksoul 3</h5>
+                        <p class="card-text">Rp 489.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalDarksoul">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/cod.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Call Of Duty MW</h5>
+                        <p class="card-text">Rp 240.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalCod">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/devil.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Devil May Cry</h5>
+                        <p class="card-text">Rp 370.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalDevil">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/god.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">God Of War:Ragnarok</h5>
+                        <p class="card-text">Rp 800.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalGod">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="action">
+                <div class="card">
+                    <img src="image/action/deadcell.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">DeadCell</h5>
+                        <p class="card-text">Rp 120.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalDeadcell">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Strategy -->
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/Age.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Age Of Empires 4</h5>
+                        <p class="card-text">Rp 199.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAge">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/Civilization.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Civilization 4</h5>
+                        <p class="card-text">Rp 500.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalCivilization">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/crusader.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Crusader Kings 3</h5>
+                        <p class="card-text">Rp 379.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalCrusader">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/Xcom.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The Art Of Xcom 2</h5>
+                        <p class="card-text">Rp 29.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalXcom">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/stellaris.avif" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Stellaris</h5>
+                        <p class="card-text">Rp 300.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalStellaris">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/ageof.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Age Of Wonders 4</h5>
+                        <p class="card-text">Rp 279.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAgeof">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/totalwar.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Total War: Warhammer 3</h5>
+                        <p class="card-text">Rp 549.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalTotalwar">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/yugioh.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Yugioh Master Duel</h5>
+                        <p class="card-text">Free</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalYugioh">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/balatro.png" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Balatro</h5>
+                        <p class="card-text">Rp 102.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalBalatro">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/heart.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hearts Of Iron 4</h5>
+                        <p class="card-text">Rp 488.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalHeart">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/persona.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Persona 5</h5>
+                        <p class="card-text">Rp 621.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalPersona">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="strategy">
+                <div class="card">
+                    <img src="image/strategy/divinity.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Divinity: Original Sin 2</h5>
+                        <p class="card-text">Rp 90.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalDivinity">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Casual -->
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/stardew.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Stardew Valley</h5>
+                        <p class="card-text">Rp 115.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalStardew">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/terraria.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Terraria</h5>
+                        <p class="card-text">Rp 90.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalTerraria">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/among.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Among Us</h5>
+                        <p class="card-text">Free</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAmong">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/sims.webp" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The Sims 4</h5>
+                        <p class="card-text">Free</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSims">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/over.webp" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Overcooked! 2</h5>
+                        <p class="card-text">Rp 49.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalOver">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/animals.png" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Party Animals</h5>
+                        <p class="card-text">Rp 185.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAnimals">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/human.avif" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Human Fall Flat </h5>
+                        <p class="card-text">Rp 156.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalHuman">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/hell.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Helltaker</h5>
+                        <p class="card-text">Free</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalHell">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/uch.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ultimate Chicken Horse</h5>
+                        <p class="card-text">Rp 45.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalUch">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/liars.avif" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Liar's Bar</h5>
+                        <p class="card-text">Rp 65.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalLiars">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/plate.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Plate Up !</h5>
+                        <p class="card-text">Rp 51.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalPlate">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="casual">
+                <div class="card">
+                    <img src="image/casual/chain.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Chainned Together</h5>
+                        <p class="card-text">Rp 42.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalChain">Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Sandbox -->
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/mine.webp" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Minecraft</h5>
+                        <p class="card-text">Rp 199.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalMine">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/raft.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The Raft</h5>
+                        <p class="card-text">Rp 110.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalRaft">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/garry.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Garry's Mod</h5>
+                        <p class="card-text">Rp 89.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalGarry">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/ark1.png" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ark Survival Evolved</h5>
+                        <p class="card-text">Rp 91.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalArk1">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/zomboid.webp" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Zomboid</h5>
+                        <p class="card-text">Rp 94.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalZomboid">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/pall.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Pallworld</h5>
+                        <p class="card-text">Rp 200.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalPall">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/scrap.jpeg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Scrap Mechanic</h5>
+                        <p class="card-text">Rp 112.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalScrap">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/sub.webp" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Subnautica Below Zero</h5>
+                        <p class="card-text">Rp 299.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSub">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/roblox.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Roblox</h5>
+                        <p class="card-text">Free</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalRoblox">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/astro.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Astroneer</h5>
+                        <p class="card-text">Rp 240.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalAstro">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/satic.jpg" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Satisfactory</h5>
+                        <p class="card-text">Rp 267.000</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modalSatic">Detail</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4 product-item" data-genre="sandbox">
+                <div class="card">
+                    <img src="image/sandbox/" alt="..." class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Product</h5>
+                        <p class="card-text">Rp Harga</p>
+                        <a href="#" class="btn btn-buy">Buy</a>
+                        <button class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modal">Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Our Product -->
+
+    <!-- Modal -->
+    <!-- Modal Action -->
+    <div class="modal fade" id="modalMortal" tabindex="-1" aria-labelledby="modalMortalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMortalLabel">Mortal Kombat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mortal Kombat adalah game fighting legendaris yang menampilkan pertarungan brutal dan alur cerita yang menarik. Game ini sangat populer di kalangan penggemar genre fighting.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalStreet" tabindex="-1" aria-labelledby="modalStreetLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStreet">Street Fighter 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Street Fighter 5 Adalah Game Fighting Buatan Capcom Yang Menyuguhkan Pertarungan Cepat Dengan Gerakan Beladiri Yang Keren.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAssasin" tabindex="-1" aria-labelledby="modalAssasinLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAssasinLabel">Assasins Creed</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Assasins Creed Bercerita Tentang Karakter Utama Callum Lynch Yang Menggunakan Teknologi Untuk Menjelajahi Memori Leluhurnya Yang Ternyata Seorang Assasins. Yang Berperang Dengan Perkumpulan Yang Disebut Templar</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTekken" tabindex="-1" aria-labelledby="modalTekkenLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTekkenLabel">Tekken 8</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tekken Adalah Game Fighting Yang Mencampurkan Tema Beladiri Dengan Tema Modern Dan Menyuguhkan Pertarungan Yang Cepat, Taktis, Dan Ikonik</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalEldenring" tabindex="-1" aria-labelledby="modalEldenringLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalEldenringLabel">Elden Ring </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Elden Ring Adalah Game Souls Like Yang Bercerita Tentang Kehancuran Dunia Dan Karakter Utama Yang Berusaha Mengumpulkan Artifak Bernama Cincin Elden Dan Menyelamatkan Dunia</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalRe4" tabindex="-1" aria-labelledby="modalRe4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRe4Label">Resident Evil 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Game survival horror klasik yang menghadirkan aksi menegangkan dan atmosfer mencekam. Ikuti Leon S. Kennedy dalam misinya menyelamatkan putri presiden dari sekte sesat di desa terpencil di Spanyol. Dengan grafis yang diperbarui dan gameplay yang diperhalus, RE4 menawarkan pengalaman bermain yang tak terlupakan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSpiderman" tabindex="-1" aria-labelledby="modalSpidermanLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSpidermanLabel">Spiderman 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rasakan sensasi menjadi pahlawan super ikonik New York City. Berayun melalui gedung-gedung tinggi, lawan penjahat super, dan selesaikan misi-misi menarik sebagai Peter Parker dan Miles Morales. Dengan alur cerita yang mendalam dan gameplay yang adiktif, Spider-Man 2 adalah game superhero yang wajib dimainkan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalDarksoul" tabindex="-1" aria-labelledby="modalDarksoulLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDarksoulLabel">Darksouls 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uji nyali Anda dalam dunia fantasi gelap yang penuh tantangan. Hadapi musuh-musuh tangguh, jelajahi lingkungan yang атмосфер, dan kuasai berbagai macam senjata dan kemampuan sihir. Dark Souls 3 dikenal dengan tingkat kesulitan yang tinggi, namun memberikan kepuasan yang luar biasa bagi para pemain yang berhasil menaklukkannya.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCod" tabindex="-1" aria-labelledby="modalCodLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCodLabel">Call Of Duty: Modern Warfare</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rasakan pengalaman pertempuran modern yang intens dan realistis. Call Of Duty Modern Warfare menawarkan mode campaign yang mendebarkan dan mode multiplayer yang adiktif. Dengan grafis yang memukau dan gameplay yang halus, Call Of Duty Modern Warfare adalah game FPS yang cocok untuk para penggemar genre ini.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalDevil" tabindex="-1" aria-labelledby="modalDevilLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDevilLabel">Devil May Cry 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bergabunglah dengan Dante, Nero, dan V dalam pertarungan melawan iblis-iblis yang menyerang dunia. Devil May Cry 5 menawarkan aksi yang stylish dan kombo-kombo yang memukau. Dengan cerita yang menarik dan karakter-karakter yang karismatik, Devil May Cry 5 adalah game action yang akan memacu adrenalin Anda.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalGod" tabindex="-1" aria-labelledby="modalGodLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGodLabel">God Of War: Ragnarok</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lanjutkan petualangan epik Kratos dan Atreus dalam mitologi Norse. God Of War: Ragnarok menawarkan grafis yang luar biasa, cerita yang mendalam, dan pertarungan yang brutal namun memuaskan. Dengan dunia yang luas untuk dijelajahi dan karakter-karakter yang kompleks, God Of War: Ragnarok adalah game action adventure yang tak boleh Anda lewatkan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalDeadcell" tabindex="-1" aria-labelledby="modalDeadcellLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDeadcellLabel">Deadcells</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nikmati kombinasi genre Metroidvania dan Roguelike yang adiktif. Dead Cells menawarkan gameplay yang cepat dan intensif, dengan berbagai macam senjata, kemampuan, dan musuh yang unik. Jelajahi kastil yang terus berubah, kumpulkan upgrade, dan kalahkan bos-bos yang menantang. Dead Cells adalah game indie yang akan membuat Anda ketagihan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Strategy -->
+    <div class="modal fade" id="modalAge" tabindex="-1" aria-labelledby="modalAgeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAgeKombatLabel">Age Of Empires 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kembali ke masa lalu dan bangun peradabanmu sendiri. Age of Empires 4 menghadirkan strategi real-time yang mendalam dengan grafis yang memukau dan delapan peradaban berbeda untuk dikuasai.  Kelola sumber daya, bangun pasukan, dan taklukkan musuh dalam pertempuran epik.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCivilization" tabindex="-1" aria-labelledby="modalCivilizationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCivilization">Civilization 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Pimpin peradabanmu dari zaman kuno hingga era modern. Civilization 4 adalah game strategi berbasis giliran yang adiktif, di mana kamu membangun kota, meneliti teknologi, dan berinteraksi dengan peradaban lain.  Diplomasi, perang, dan budaya adalah kunci untuk mencapai kemenangan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCrusader" tabindex="-1" aria-labelledby="modalCrusaderLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalCrusaderLabel">Crusader Kings 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kuasai Eropa abad pertengahan sebagai penguasa dinasti. Crusader Kings 3 adalah game strategi grand yang kompleks, di mana kamu bermain sebagai karakter, bukan hanya sebuah bangsa.  Intrik politik, pernikahan, dan perang adalah bagian dari kehidupanmu saat kamu berusaha memperluas wilayah dan mengamankan warisan keluargamu.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalXcom" tabindex="-1" aria-labelledby="modalXcomLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalXcomLabel">The Art Of Xcom 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uji kemampuan taktikmu dalam game strategi berbasis giliran yang menantang ini. The Art of XCOM 2 menempatkanmu sebagai komandan pasukan elit yang bertugas melawan invasi alien.  Setiap keputusan penting, dan kekalahan selalu mengintai.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalStellaris" tabindex="-1" aria-labelledby="modalStellarisLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStellarisLabel">Stellaris </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Jelajahi galaksi yang luas dan bangun kerajaan antarbintangmu sendiri. Stellaris adalah game strategi grand 4X (eXplore, eXpand, eXploit, eXterminate) yang menawarkan gameplay yang dalam dan dapat dimainkan kembali tanpa batas.  Temukan peradaban baru, teliti teknologi canggih, dan hadapi ancaman dari luar angkasa.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAgeof" tabindex="-1" aria-labelledby="modalAgeofLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAgeofLabel">Age Of Wonders 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bangun kerajaan fantasi dan kuasai dunia sihir. Age of Wonders 4 menggabungkan strategi berbasis giliran yang mendalam dengan elemen RPG. Pilih rasmu, kembangkan kekuatan magismu, dan pimpin pasukanmu dalam pertempuran taktis.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTotalwar" tabindex="-1" aria-labelledby="modalTotalwarLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Total War: Warhammer 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rasakan pertempuran epik dalam skala besar di dunia Warhammer yang fantastis. Total War: Warhammer 3 menggabungkan strategi berbasis giliran di peta kampanye dengan pertempuran real-time yang spektakuler.  Pilih faksi favoritmu dan pimpin pasukanmu menuju kemenangan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalYugioh" tabindex="-1" aria-labelledby="modalYugiohLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalYugiohLabel">Yugioh Master Duel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bertarunglah dalam duel kartu yang seru melawan pemain dari seluruh dunia. Yu-Gi-Oh! Master Duel menghadirkan gameplay Yu-Gi-Oh! yang autentik dengan grafis yang memukau dan animasi yang dinamis.  Bangun deck andalanmu dan jadilah duelist terhebat.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalBalatro" tabindex="-1" aria-labelledby="modalBalatroLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBalatroLabel">Balatro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uji keberuntungan dan keahlianmu dalam Balatro!  Game yang menggabungkan Cara bermain Kartu Remi Dengan Banyak Elemen Lain, Seperti Ability Kartu Joker, Efek Kartu Tarrot, Peningkatan Level Hands Dengan Planet Card, Dan Kartu Spectral Card Yang Membuat Deck mu Semakin Kuat. Kalahkan Para Boss Blind Dan Rasakan Sensasinya!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalHeart" tabindex="-1" aria-labelledby="modalHeartLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHeartLabel">Hearts Of Iron 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Pimpin negara pilihanmu selama Perang Dunia II dalam game strategi grand yang sangat detail ini. Hearts of Iron 3 memungkinkanmu mengendalikan aspek politik, ekonomi, militer, dan teknologi dari negara yang terlibat dalam perang.  Buat keputusan strategis yang akan menentukan jalannya sejarah.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPersona" tabindex="-1" aria-labelledby="modalPersonaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPersonaLabel">Persona 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Rasakan petualangan yang penuh gaya dan misterius di Tokyo. Persona 5 adalah game RPG yang menggabungkan elemen sosial, dungeon crawling, dan pertarungan berbasis giliran.  Bergabunglah dengan Phantom Thieves dan lawan korupsi yang merajalela di masyarakat.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalDivinity" tabindex="-1" aria-labelledby="modalDivinityLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDivinityLabel">Divinity: Original Sin 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nikmati petualangan RPG yang mendalam dan penuh pilihan. Divinity: Original Sin 2 menawarkan gameplay berbasis giliran yang taktis, cerita yang menarik, dan karakter-karakter yang kompleks.  Jelajahi dunia Rivellon yang luas dan ungkap misteri Source.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Casual -->
+    <div class="modal fade" id="modalStardew" tabindex="-1" aria-labelledby="modalStardewLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalStardewLabel">Stardew Valley</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tinggalkan hiruk pikuk kota dan mulai hidup baru di pedesaan. Stardew Valley adalah game simulasi pertanian yang menenangkan, di mana kamu bercocok tanam, beternak, memancing, menambang, dan berinteraksi dengan penduduk desa.  Bangun pertanian impianmu dan temukan kedamaian di lembah Stardew.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalTerraria" tabindex="-1" aria-labelledby="modalTerrariaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTerraria">Terraria</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Gali, bertarung, dan bangun duniamu sendiri. Terraria adalah game petualangan sandbox 2D yang penuh dengan eksplorasi, crafting, dan pertempuran melawan monster-monster epik.  Jelajahi dunia yang luas, kumpulkan sumber daya, dan ciptakan berbagai macam item dan bangunan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAmong" tabindex="-1" aria-labelledby="modalAmongLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAmongLabel">Among Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Cari tahu siapa pengkhianat di antara kru pesawat luar angkasa. Among Us adalah game multiplayer yang seru dan penuh ketegangan, di mana pemain harus bekerja sama untuk menyelesaikan tugas sambil mencari tahu siapa Impostor yang menyamar di antara mereka.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSims" tabindex="-1" aria-labelledby="modalSimsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSimsLabel">The Sims 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ciptakan dan kendalikan kehidupan Sims-mu. The Sims 4 adalah game simulasi kehidupan yang populer, di mana kamu dapat membangun rumah, mengatur hubungan, mengejar karir, dan menjalani berbagai macam aktivitas.  Kreasikan Sims unik dengan kepribadian dan aspirasi mereka sendiri.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalOver" tabindex="-1" aria-labelledby="modalOverLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalOverLabel">Overcooked! 2 </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kacaukan dapur dan masak bersama teman-temanmu. Overcooked! 2 adalah game memasak kooperatif yang seru dan kacau, di mana pemain harus bekerja sama untuk menyiapkan dan menyajikan makanan dalam berbagai macam kondisi yang menantang.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAnimals" tabindex="-1" aria-labelledby="modalLabelAnimals" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabelAnimals">Party Animals</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bersaing dengan teman-temanmu dalam berbagai macam mini-game yang lucu dan kacau. Party Animals adalah game party yang sempurna untuk dimainkan bersama teman-teman, dengan karakter-karakter binatang yang imut dan gameplay yang menghibur.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalHuman" tabindex="-1" aria-labelledby="modalHumanLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHumanLabel">Human Fall Flat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kontrol karakter yang goyah dan selesaikan berbagai macam teka-teki fisika. Human Fall Flat adalah game puzzle platformer yang lucu dan menantang, di mana pemain harus menggunakan fisika untuk memecahkan teka-teki dan mencapai tujuan.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalHell" tabindex="-1" aria-labelledby="modalHellLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalHellLabel">Helltaker</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kumpulkan harem iblis dalam game puzzle yang unik dan penuh gaya. Helltaker adalah game puzzle dengan elemen visual novel, di mana pemain harus memecahkan teka-teki untuk mendapatkan hati para iblis dan membangun harem mereka.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalUch" tabindex="-1" aria-labelledby="modalUchLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalUchLabel">Ultimate Chicken Horse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Buat level yang mustahil dan coba selesaikan bersama teman-temanmu. Ultimate Chicken Horse adalah game platformer party yang unik, di mana pemain membangun level secara bersamaan dan kemudian mencoba untuk menyelesaikannya.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLiars" tabindex="-1" aria-labelledby="modalLiarsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLiarsLabel">Liar's Bar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mortal Kombat adalah game fighting legendaris yang menampilkan pertarungan brutal dan gerakan beladiri yang ikonik. Game ini sangat populer di kalangan penggemar genre fighting.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPlate" tabindex="-1" aria-labelledby="modalPlateLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPlateLabel">Plate Up !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kelola restoranmu sendiri dan sajikan makanan kepada pelanggan. Plate Up! adalah game simulasi restoran yang menantang, di mana pemain harus memasak, menyajikan makanan, dan mengelola staf untuk menjaga restoran tetap berjalan dengan sukses.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalChain" tabindex="-1" aria-labelledby="modalChainLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalChainLabel">Chainned Together</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bekerja sama dengan teman-temanmu untuk mendaki gunung neraka yang berbahaya. Chained Together adalah game platformer kooperatif yang unik, di mana pemain terikat satu sama lain dan harus bekerja sama untuk mencapai puncak gunung neraka.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Sandbox -->
+    <div class="modal fade" id="modalMine" tabindex="-1" aria-labelledby="modalMineLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMineLabel">Minecraft</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bangun duniamu sendiri dari balok-balok. Minecraft adalah game sandbox yang sangat populer, di mana pemain dapat menjelajahi dunia yang luas, mengumpulkan sumber daya, membuat berbagai macam bangunan dan item, serta melawan monster. Kreativitas tanpa batas adalah kunci dari Minecraft.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalRaft" tabindex="-1" aria-labelledby="modalRaftLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRaft">The Raft</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Terdampar di laut lepas, rakitmu adalah rumahmu. The Raft adalah game survival di mana pemain harus bertahan hidup di atas rakit yang terus berkembang, mengumpulkan sumber daya dari laut, melawan hiu, dan mengungkap misteri dunia yang tenggelam.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalGarry" tabindex="-1" aria-labelledby="modalGarryLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGarryLabel">Garrys Mod</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lakukan apa pun yang kamu inginkan! Garry's Mod adalah game sandbox yang memberikan pemain kebebasan tanpa batas untuk bereksperimen dengan fisika, membangun berbagai macam kreasi, dan bermain dengan berbagai macam mod.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalArk1" tabindex="-1" aria-labelledby="modalArk1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalArk1Label">Art Survival Evolved</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bertahan hidup di dunia prasejarah yang penuh dinosaurus. Ark: Survival Evolved adalah game survival di mana pemain harus berburu, membuat kerajinan, membangun tempat tinggal, dan menjinakkan dinosaurus untuk bertahan hidup di dunia yang berbahaya.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalZomboid" tabindex="-1" aria-labelledby="modalZomboidLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalZomboidLabel">Project Zomboid </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bertahan hidup dari kiamat zombie yang realistis. Project Zomboid adalah game survival zombie yang menantang, di mana pemain harus mencari makanan, obat-obatan, dan perlengkapan lainnya sambil menghindari gerombolan zombie yang tak kenal lelah.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPall" tabindex="-1" aria-labelledby="modalPallLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalPallLabel">Pallworld</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Kumpulkan makhluk-makhluk lucu dan gunakan mereka untuk membangun dan bertarung. Palworld adalah game action-adventure yang menggabungkan elemen pengumpulan makhluk, membangun, dan bertarung.  Jelajahi dunia yang penuh warna dan ungkap misteri para Pal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalScrap" tabindex="-1" aria-labelledby="modalScrapLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalScrapLabel">Scrap Mechanic</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bangun mesin-mesin gila dari rongsokan. Scrap Mechanic adalah game sandbox di mana pemain dapat menggunakan berbagai macam komponen untuk membangun kendaraan, mesin, dan perangkat lainnya. Kreativitas dan imajinasi adalah kunci dalam game ini.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSub" tabindex="-1" aria-labelledby="modalSubLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSubLabel">Subnautica Below Zero</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Jelajahi dunia bawah laut yang misterius dan berbahaya. Subnautica: Below Zero adalah game survival bawah laut di mana pemain harus bertahan hidup di planet alien yang beku, mengumpulkan sumber daya, membangun basis, dan mengungkap misteri di balik hilangnya tim penelitian.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalRoblox" tabindex="-1" aria-labelledby="modalRobloxLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalRobloxLabel">Roblox</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mainkan jutaan game yang dibuat oleh pemain lain. Roblox adalah platform game online yang sangat populer, di mana pemain dapat membuat dan memainkan berbagai macam game yang dibuat oleh komunitas.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalAstro" tabindex="-1" aria-labelledby="modalAstroLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalAstroLabel">Astroneer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Jelajahi dan bentuk planet-planet asing. Astroneer adalah game sandbox eksplorasi luar angkasa di mana pemain dapat menjelajahi planet-planet yang berbeda, mengumpulkan sumber daya, membangun basis, dan mengungkap misteri alam semesta.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSatic" tabindex="-1" aria-labelledby="modalSaticLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalSaticLabel">Satisfactory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bangun pabrik-pabrik raksasa dan otomatiskan produksi. Satisfactory adalah game membangun pabrik orang pertama di mana pemain harus merencanakan, membangun, dan mengotomatiskan produksi sumber daya untuk membangun pabrik yang efisien dan kompleks.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Mortal Kombat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Mortal Kombat adalah game fighting legendaris yang menampilkan pertarungan brutal dan gerakan beladiri yang ikonik. Game ini sangat populer di kalangan penggemar genre fighting.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+<!-- About -->
+<div class="about-section">
+    <h1 class="custom-h1">About Us</h1>
+    <div class="accordion-container">
+        <div class="accordion" id="accordionExample">
+            <!-- Obestore -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aboutObestore" aria-expanded="true" aria-controls="collapseOne">Obestore</button>
+                </h2>
+                <div id="aboutObestore" class="accordion-collapse collapse block" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Obestore</strong> Adalah Website Game Store Yang Menyediakan Game-Game Berkualitas Dengan Harga Terjangkau.
+                    </div>
+                </div>
+            </div>
+            <!-- Sejarah -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aboutSejarah" aria-expanded="true" aria-controls="collapseOne">Sejarah</button>
+                </h2>
+                <div id="aboutSejarah" class="accordion-collapse collapse block" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Sejarah</strong> Dibuat Pada Minggu, 16-02-2025 Oleh Seorang Mahasiswa Yang Sedang Belajar Tentang Web Development Di SMKN1 Majalengka.
+                    </div>
+                </div>
+            </div>
+            <!-- Visi -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aboutVisi" aria-expanded="true" aria-controls="collapseOne">Visi</button>
+                </h2>
+                <div id="aboutVisi" class="accordion-collapse collapse block" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Visi</strong> Untuk Menjadi Website Game Store Terbaik Di Indonesia. Dan Menciptakan komunitas gamer yang solid dan terhubung.
+                    </div>
+                </div>
+            </div>
+            <!-- Misi -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#aboutMisi" aria-expanded="true" aria-controls="collapseOne">Misi</button>
+                </h2>
+                <div id="aboutMisi" class="accordion-collapse collapse block" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <ol>
+                            <li>Menyediakan Game-Game Berkualitas Dengan Harga Terjangkau Untuk Komunitas Gamers Di Indonesia</li>
+                            <li>Mengadakan Berbagai Event Gaming Offline Maupun Online Untuk Komunitas Dapat Berkreasi Dan Bersosialisasi</li>
+                            <li>Menciptakan Citra Sebagai Web Yang Dapat Dipercaya Oleh Komunitas Gamers</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End About -->
+
+<!-- Our Team -->
+    <!-- Bagian Our Team -->
+<section class="team-section">
+    <h1 class="custom-h1">Our Team</h1>
+    <div class="team-container">
+        <!-- Anggota Tim 1 -->
+        <div class="team-member">
+            <img src="image/team/chad.jpeg" alt="Team Member 1">
+            <h3>Chad Jhon</h3>
+            <p>Frontend Developer</p>
+        </div>
+
+        <!-- Anggota Tim 2 -->
+        <div class="team-member">
+            <img src="image/team/siimut.jpeg" alt="Team Member 2">
+            <h3>Jimmy Miller</h3>
+            <p>Backend Developer</p>
+        </div>
+
+        <!-- Anggota Tim 3 -->
+        <div class="team-member">
+            <img src="image/team/bro's.jpeg" alt="Team Member 3">
+            <h3>Arthur Bro's</h3>
+            <p>UI/UX Designer</p>
+        </div>
+        <!-- Anggota Tim 4 -->
+        <div class="team-member">
+            <img src="image/team/manager.jpeg" alt="Team Member 3">
+            <h3>Michael Brown</h3>
+            <p>UI/UX Designer</p>
+        </div>
+    </div>
+</section>
+<!-- End Our Team -->
+
+    <!-- Form -->
+    <h1 class="custom-h1">Contact</h1>
+    <div id="contact" class="contact-section">
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputSubject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="exampleInputSubject">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleInputMessage" rows="6" style=></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <!-- Peta Lokasi -->
+         <div class="map">
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1302.5811452445494!2d108.27050835244432!3d-6.780785777057163!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1739599220169!5m2!1sid!2sid" width="600"
+            height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+    </div>
+    <!-- End Form -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <span>Follow for more: </span>
+                <a href="https://www.youtube.com/channel/UC-jTDOHCP1vLTbCG_y2TMhQ" target="_blank" class="social-icon">
+                    <img src="image/icon/youtube.svg" alt="YouTube" />
+                </a>
+                <a href="https://www.instagram.com/sarip_mdim?igsh=MWF6aXZkN3JmOXBvZg==" target="_blank" class="social-icon">
+                    <img src="image/icon/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="https://www.linkedin.com/in/sarip-mudaim-031b21351/" target="_blank" class="social-icon">
+                    <img src="image/icon/linkedin.svg" alt="LinkedIn" />
+                </a>
+            </div>
+            <div class="copyright">
+                &copy; 2025  Obestore Property 
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
